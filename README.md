@@ -1,2 +1,2 @@
-# BlogWebAplication
-Blog Application Using Django Framework
+# Blog Web Application
+Blog Application Using Python, Django Framework
