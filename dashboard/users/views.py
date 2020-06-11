@@ -7,6 +7,7 @@ from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from blog.models import Post
 from django.contrib.auth.models import User
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.http import HttpResponse
 
 def register(request):
     if request.method == 'POST': 
@@ -45,4 +46,5 @@ def profile(request):
     }
     return render(request, 'users/profile.html', context)
 
-
+def test(request):
+    return HttpResponse('Hrllo World')
